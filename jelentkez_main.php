@@ -1,23 +1,43 @@
-<script>
-	function checkForm() {
+<head>
+
+<script type="text/javascript">
+	/*function checkForm() {
 		var x = document.getElementById('vnev');
 		var y = document.getElementById('knev');
-
+		var id = $(this).attr("id");
 		
 		if (!x.value.match(/^[A-Za-záéíóúöőüűÁÉÍÓÚÖŐÜŰ]+$/) || !y.value.match(/^[A-Za-záéíóúöőüűÁÉÍÓÚÖŐÜŰ]+$/)) {
+			$(this).css({
+				style: "backround-color: red",
+				disabled
+			});
 			
-			alert("Kérem csak betüket használjon a névmezőknél!");	
-			return false;
+			//return false;
 		}
 		else 
 		{
-			return true;
+			//return true;
 		}
-	}
+	}*/
+	$(document).ready(function()
+	{
+		$("button.button").hover(function(){
+			$(this).css("backround-color: red ")
+		});
+
+			//alert("Kérem csak betüket használjon a névmezőknél!");	
+
+	});
+	
+	
+	
+
+
 </script>
+</head>
 <article class="jelentkezes">
 	<h1>Jelentkezés</h1>
-	<form name="form1" action="." method="post" onsubmit="return checkForm()">
+	<form name="form1" action="<?php SITE_ROOT?>" method="post" >
 	<fieldset>
 	<legend><h3> Személyes adatok</h3></legend>
 	
@@ -47,7 +67,7 @@
 		<input type="radio"  name="titulus" value="versenyző" checked>Versenyző</input>
 		<input type="radio"  name="titulus" value="önkentes">Önkéntes</input>
 		<input type="radio"  name="titulus" value="bíró">Bíró</input></br>
-		<button type="submit" name="sub" >Elküld</button>
+		<button type="submit" id="gomb" class="button" name="sub" >Elküld</button>
 	</fieldset>
 	</form>
 	<section>
