@@ -1,5 +1,7 @@
 # WebProg2
 Web Prog 2 beadandó
+
+
 Készítsen egy weboldalt egy fiktív cég részére, amely a következő követelményeknek tesz eleget: 
 1.	A weboldalon legyen bejelentkezési és regisztrációs lehetőség. A regisztrált felhasználók olvashatnak és írhatnak véleményeket, híreket. A vélemények, hírek megjelenítésekor jelenítsük meg a létrehozás időpontját és a létrehozó felhasználó bejelentkezési nevét. (3 pont) 
 2.	a, alkalmazza az objektum-orientált PHP elveit
