@@ -1,0 +1,395 @@
+body, p, h1, h2, h3, h4, table, tr, th, td, img , ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+	background-color: #CAB88E;
+}
+header {
+	height: 80px;
+	padding-left: 20px ;
+}
+
+header a {
+	text-decoration: none;
+	color:  #503F16;
+}
+header p {
+	font-style: italic;
+	font-size: 20px;
+}
+
+#Career {
+	margin-top:30px;
+}
+
+header h1 {
+	margin-top: 10px;
+	float:left;
+}
+
+header img{
+	margin-left: 5px;
+	margin-top: 10px;
+	float: left;
+}
+
+nav {
+	background-color:#503F16;
+}
+
+	nav li {
+	  display:inline;
+	  float: left;
+  }
+nav ul {
+	  margin-left: 10px;
+	  list-style-type: none;
+  } 
+nav a {
+	  padding: 10px 20px 11px;
+	  color: green;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  display: block;
+}
+nav a.selected {
+	  color: #503F16;
+	  background-color: #036F05;
+	  
+}
+nav a:hover {
+	  background-color: #036F05;
+ }	
+
+
+
+div.torzs{
+	padding: 25px 0;
+}
+	aside {
+    width: 280px;
+    float:left;
+    font-size: 10pt;
+	
+  }
+    aside section {
+      margin-bottom: 20px;
+	 
+    }
+    aside section h2 {
+      padding: 5px 25px;
+      color: #503F16;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+	
+	aside section p {
+		
+		height: 200px;
+
+		font-size: 2vw;
+		padding: 5px 25px;
+		text-align: justify;
+		line-height: 160%;
+    }
+	
+	aside section li {
+		text-decoration: none;
+		margin-left: 40px;
+	}
+	
+	aside section a {
+		color: black;
+		text-decoration:none;
+		display: block;
+	}
+	
+	section.page {
+		margin-left: 320px;
+		
+	}
+		article.rolunk h2 {
+			margin-bottom:30px;
+		}
+		
+		article.rolunk p {
+			text-indent: 1cm;
+			
+			padding-right:500px;
+			
+		}
+		
+		article.rolunk div {
+			padding-left: 50px;
+			margin-top: 30px;			
+		}
+		
+		
+		article.versenyek section {
+			margin-left: 50px;
+		
+		}
+		
+		article.versenyek h3 {
+			margin-top: 20px;
+		
+		}
+		
+		
+		article.versenyek section h4 {
+			margin: 21px 0 10px 0;
+		
+		}
+		
+		article.versenyek img {
+			width: 50px;
+			height: 50px;
+			float: left;
+		
+		}
+		article.versenyek section p {
+			padding-right:300px;
+		
+		}
+		
+		article.event {
+			border-bottom: 1px solid #036F05;
+			padding-bottom: 8px;
+			
+			margin:0 200px 20px 0;
+		}
+		
+		article.event h3 {
+			padding-top: 20px;
+			
+		}
+		
+	
+		
+		article.event p {
+			text-indent: 1cm;
+			padding-top: 10px;
+			width: 300px;
+			float: left;
+		}
+		 article.event iframe {
+			padding-left: 50px;
+			
+			
+		}
+		
+		article.hof table, th, td {
+			
+			border: 1px solid #036F05;
+		}
+		
+		article.hof table{
+			margin-right: 300px;		
+		}
+		
+		article.hof table tr {
+			height:30px;
+		}
+		
+		article.hof img.myImg {
+			width: 150px;
+			height: 200px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		article.hof .myImg:hover {opacity: 0.7;}
+
+
+		article.hof .modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%; 
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.9);
+		}
+
+
+		article.hof .modal-content {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+		}
+
+
+		article.hof #caption {
+			margin: auto;
+			display: block;
+			width: 80%;
+			max-width: 700px;
+			text-align: center;
+			color: #ccc;
+			padding: 10px 0;
+			height: 150px;
+		}	
+
+		article.hof .modal-content, #caption {  
+			-webkit-animation-name: zoom;
+			-webkit-animation-duration: 0.6s;
+			animation-name: zoom;
+			animation-duration: 0.6s;
+		}
+
+		@-webkit-keyframes zoom {
+			from {-webkit-transform:scale(0)} 
+			to {-webkit-transform:scale(1)}
+		}
+
+		@keyframes zoom {
+			from {transform:scale(0)} 
+			to {transform:scale(1)}
+		}
+
+		article.hof span.close {
+			position: absolute;
+			top: 15px;
+			right: 35px;
+			color: #f1f1f1;
+			font-size: 40px;
+			font-weight: bold;
+			transition: 0.3s;
+		}		
+
+		article.hof span.close:hover, span.close:focus {
+			color: #bbb;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+
+		@media only screen and (max-width: 700px){
+		.modal-content {
+		width: 100%;
+		}
+		}
+		
+		article.jelentkezes form {
+			float: left;
+				
+		}
+		
+		
+		article.jelentkezes fieldset {
+			text-align: center;
+			width: 500px;	
+			margin:0 90px 20px 0;
+			border-color: white;
+			
+		}	
+		
+		article.jelentkezes fieldset p {
+			text-align: left;
+			p9adding-left: 100px;
+			margin-bottom: 10px;
+		}
+		
+		input[type=text], input[type=email],input[type=tel], input[type=date], select  {
+			width: 75%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			text-align: center;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 100px;
+			box-sizing: border-box;
+		}
+		
+
+		
+		input[type=date] {
+			cursor: pointer;
+		}
+		
+		button[type=submit] {			
+			width: 40%;
+			background-color: #036F05;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 100px;
+			cursor: pointer;
+		}
+		article.jelentkezes section p {
+			padding:50px 150px 0 0;
+			color: gray;
+			
+		}	
+
+input[type=password]
+{
+	width: 75%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			text-align: center;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 100px;
+			box-sizing: border-box;
+} 
+input[type=submit]
+{
+	
+	color: white;
+	background-color: #036F05;
+}
+input#uidlogin {
+	width: 8%;
+	float: right;	
+	padding: 5px 15px;
+	margin: 3px 0; 
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 100px;
+	box-sizing: border-box;
+
+}
+input#pswlogin {
+	width: 8%;
+	float: right;	
+	padding: 5px 15px;
+	margin: 3px 0; 
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 100px;
+	box-sizing: border-box;
+
+}
+input#butlogin {
+	width: 8%;
+	float: right;	
+	padding: 5px 15px;
+	margin: 3px 0; 
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 100px;
+	box-sizing: border-box;
+
+}
+footer {
+  clear: both;
+  border-top: 5px solid #036F05;
+  padding: 20px;
+  font-size: 8pt;
+  color: #777777;
+  text-align: center;
+  text-transform: uppercase;
+}
